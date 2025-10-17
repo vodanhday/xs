@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from xscore.site/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Oct 2025 16:46:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<!-- Favicon for browsers -->
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+
+<!-- Apple Touch Icon (iOS / Safari) -->
+<link rel="apple-touch-icon" href="logo.jpg">
+
+<!-- For older IE -->
+<link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+
+
+
+
+
+
+
+
+
+<div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
+          <iframe data-aa='2409839' src='http://acceptable.a-ads.com/2409839/?size=Adaptive'
+                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xscore.site - Online Casino Ratings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+    <link href="../cdn.jsdelivr.net/npm/remixicon%403.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <style>
+        .casino-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .casino-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .filter-btn.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .star-rating {
+            color: #f59e0b;
+        }
+        .progress-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e5e7eb;
+            overflow: hidden;
+        }
+        .progress-value {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            z-index: 1000;
+        }
+        .language-dropdown.show {
+            display: block;
+        }
+        
+        /* Side banner styles */
+        .side-banner {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 160px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            padding: 15px;
+            z-index: 40;
+            transition: all 0.3s ease;
+        }
+        .side-banner:hover {
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-50%) scale(1.02);
+        }
+        .left-banner {
+            left: 20px;
+        }
+        .right-banner {
+            right: 20px;
+        }
+        .banner-title {
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #3b82f6;
+        }
+        .banner-content {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            border-radius: 8px;
+            padding: 15px 10px;
+            color: white;
+            text-align: center;
+        }
+        .banner-button {
+            display: block;
+            width: 100%;
+            background: #f59e0b;
+            color: white;
+            font-weight: bold;
+            padding: 8px 0;
+            border-radius: 6px;
+            margin-top: 10px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .banner-button:hover {
+            background: #fbbf24;
+        }
+        
+        /* RTL support for Arabic */
+        .rtl {
+            direction: rtl;
+            text-align: right;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1400px) {
+            .side-banner {
+                width: 140px;
+            }
+        }
+        @media (max-width: 1200px) {
+            .side-banner {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Left Side Banner -->
+    <div class="side-banner left-banner">
+        <div class="banner-title">SPECIAL OFFER</div>
+        <div class="banner-content">
+            <div class="text-xl font-bold">200%</div>
+            <div class="text-sm">Bonus up to</div>
+            <div class="text-lg font-bold">$1000</div>
+            <div class="text-xs mt-2">+ 100 Free Spins</div>
+            <a href="#" class="banner-button">CLAIM NOW</a>
+        </div>
+    </div>
+
+    <!-- Right Side Banner -->
+    <div class="side-banner right-banner">
+        <div class="banner-title">TOP CASINO</div>
+        <div class="banner-content">
+            <div class="text-3xl mb-2">🎰</div>
+            <div class="text-sm font-bold">CASINO ROYAL</div>
+            <div class="text-xs mt-2">4.9/5 Rating</div>
+            <div class="text-xs">9500+ Players</div>
+            <a href="#" class="banner-button">PLAY NOW</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                        <i class="ri-game-line text-blue-600 text-xl"></i>
+                    </div>
+                    <span class="text-white text-xl font-bold">xscore.site</span>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-blue-200 transition-colors cursor-pointer whitespace-nowrap" data-translate="home">Home</a>
+                    <a href="#" class="text-white hover:text-blue-200 transition-colors cursor-pointer whitespace-nowrap" data-translate="casinos">Casinos</a>
+                    <a href="#" class="text-white hover:text-blue-200 transition-colors cursor-pointer whitespace-nowrap" data-translate="reviews">Reviews</a>
+                    <a href="#" class="text-white hover:text-blue-200 transition-colors cursor-pointer whitespace-nowrap" data-translate="bonuses">Bonuses</a>
+                    <a href="#" class="text-white hover:text-blue-200 transition-colors cursor-pointer whitespace-nowrap" data-translate="about">About Us</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="relative">
+                        <input id="searchInput" placeholder="Search casinos..." class="w-64 pl-10 pr-4 py-2 rounded-lg bg-white/20 text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm">
+                        <i class="ri-search-line absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70 text-sm"></i>
+                    </div>
+                    <div class="language-selector relative">
+                        <button id="languageBtn" class="flex items-center space-x-2 px-3 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors cursor-pointer whitespace-nowrap">
+                            <span class="text-lg">🇺🇸</span>
+                            <span class="text-sm font-medium text-white" data-translate="language">English</span>
+                            <i class="ri-arrow-down-s-line text-white transition-transform"></i>
+                        </button>
+                        <div id="languageDropdown" class="language-dropdown absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                            <button class="language-option w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors cursor-pointer" data-lang="en">
+                                <span class="text-lg">🇺🇸</span>
+                                <span class="text-sm font-medium" data-translate="english">English</span>
+                            </button>
+                            <button class="language-option w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors cursor-pointer" data-lang="ka">
+                                <span class="text-lg">🇬🇪</span>
+                                <span class="text-sm font-medium" data-translate="georgian">Georgian</span>
+                            </button>
+                            <button class="language-option w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors cursor-pointer" data-lang="ru">
+                                <span class="text-lg">🇷🇺</span>
+                                <span class="text-sm font-medium" data-translate="russian">Russian</span>
+                            </button>
+                            <button class="language-option w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors cursor-pointer" data-lang="tr">
+                                <span class="text-lg">🇹🇷</span>
+                                <span class="text-sm font-medium" data-translate="turkish">Turkish</span>
+                            </button>
+                            <button class="language-option w-full flex items-center space-x-3 px-4 py-2 hover:bg-gray-50 transition-colors cursor-pointer" data-lang="ar">
+                                <span class="text-lg">🇸🇦</span>
+                                <span class="text-sm font-medium" data-translate="arabic">Arabic</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="md:hidden text-white cursor-pointer">
+                    <i class="text-xl ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container mx-auto px-4 py-8">
+        <!-- Top 3 Featured Casinos -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center" data-translate="featured">🏆 Top 3 Featured Casinos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="featuredCasinos">
+                <!-- Featured casinos will be populated by JavaScript -->
+            </div>
+        </div>
+        <!-- Complete List -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200 mb-6">
+            <div class="p-6 border-b border-gray-200">
+                <h1 class="text-3xl font-bold text-gray-900 mb-2" data-translate="fullList">Complete List of 20 Online Casinos</h1>
+                <p class="text-gray-600" data-translate="description">Browse our comprehensive database of online casinos with detailed reviews, ratings, and bonuses.</p>
+            </div>
+          <br>
+            <!-- Filters -->
+            <div class="p-4 bg-gray-50 border-b border-gray-200">
+                <div class="flex flex-wrap gap-2" id="filterButtons">
+                    <button class="filter-btn active px-4 py-2 rounded-md font-medium transition-all duration-200 cursor-pointer whitespace-nowrap" data-filter="all" data-translate="allCasinos">All Casinos</button>
+                    <button class="filter-btn px-4 py-2 rounded-md font-medium transition-all duration-200 cursor-pointer whitespace-nowrap" data-filter="recommended" data-translate="recommended">Recommended</button>
+                    <button class="filter-btn px-4 py-2 rounded-md font-medium transition-all duration-200 cursor-pointer whitespace-nowrap" data-filter="newest" data-translate="new">New</button>
+                    <button class="filter-btn px-4 py-2 rounded-md font-medium transition-all duration-200 cursor-pointer whitespace-nowrap" data-filter="popular" data-translate="popular">Popular</button>
+                    <button class="filter-btn px-4 py-2 rounded-md font-medium transition-all duration-200 cursor-pointer whitespace-nowrap" data-filter="rated" data-translate="highRated">High Rated</button>
+                </div>
+            </div>
+            <!-- Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-100 border-b border-gray-200">
+                            <th class="text-center py-3 px-4 font-semibold text-gray-700 w-16">#</th>
+                            <th class="text-center py-3 px-4 font-semibold text-gray-700" colspan="2" data-translate="casino">Casino</th>
+                            <th class="text-right py-3 px-4 font-semibold text-gray-700" data-translate="dailyVisits">Daily Visits</th>
+                            <th class="text-center py-3 px-4 font-semibold text-gray-700" data-translate="rating">Rating</th>
+                            <th class="text-center py-3 px-4 font-semibold text-gray-700" data-translate="play">Play</th>
+                        </tr>
+                    </thead>
+                    <tbody id="casinosTable">
+                        <!-- Casino rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Statistics -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-blue-600 mb-1">20</div>
+                <div class="text-sm text-gray-600" data-translate="totalCasinos">Total Casinos</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-green-600 mb-1">1,250+</div>
+                <div class="text-sm text-gray-600" data-translate="userReviews">User Reviews</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-purple-600 mb-1">850+</div>
+                <div class="text-sm text-gray-600" data-translate="userRatings">User Ratings</div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 text-center">
+                <div class="text-2xl font-bold text-orange-600 mb-1">24/7</div>
+                <div class="text-sm text-gray-600" data-translate="monitoring">Monitoring</div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="ri-game-line text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">xscore.site</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md" data-translate="footerDescription">Your trusted source for online casino reviews, bonuses, and game guides.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors cursor-pointer">
+                            <i class="ri-twitter-x-line text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors cursor-pointer">
+                            <i class="ri-youtube-fill text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-translate="quickLinks">Statistics</h3>
+                    <ul class="space-y-2">
+                    
+                    
+                    
+<script type="text/javascript" src="https://www.free-counters.org/count/ijy1"></script><br>
+ <a href='https://www.versicherungen.at/tier-krankenversicherung/'>Haustier Krankenversicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=9de061d59e4b430781afdabd079fe02f63612ee3'></script>
+
+
+
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-translate="contact">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2 text-gray-300">
+                            <i class="ri-mail-line"></i>
+                            <span>offerxscore@gmail.com
+</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-gray-300">
+                            <i class="ri-phone-line"></i>
+                            <span>***********************</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 xscore.site. <span data-translate="rightsReserved">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Translation data
+        const translations = {
+            en: {
+                home: "Home",
+                casinos: "Casinos",
+                reviews: "Reviews",
+                bonuses: "Bonuses",
+                about: "About Us",
+                language: "English",
+                georgian: "Georgian",
+                english: "English",
+                russian: "Russian",
+                turkish: "Turkish",
+                arabic: "Arabic",
+                featured: "🏆 Top 3 Featured Casinos",
+                fullList: "Complete List of 20 Online Casinos",
+                description: "Browse our comprehensive database of online casinos with detailed reviews, ratings, and bonuses.",
+                allCasinos: "All Casinos",
+                recommended: "Recommended",
+                new: "New",
+                popular: "Popular",
+                highRated: "High Rated",
+                casino: "Casino",
+                dailyVisits: "Daily Visits",
+                rating: "Rating",
+                play: "Play",
+                totalCasinos: "Total Casinos",
+                userReviews: "User Reviews",
+                userRatings: "User Ratings",
+                monitoring: "Monitoring",
+                footerDescription: "Your trusted source for online casino reviews, bonuses, and game guides.",
+                quickLinks: "Quick Links",
+                contact: "Contact",
+                rightsReserved: "All rights reserved.",
+                playNow: "Play Now",
+                popularity: "Popularity",
+                bonus: "Bonus"
+            },
+            ka: {
+                home: "მთავარი",
+                casinos: "კაზინოები",
+                reviews: "მიმოხილვები",
+                bonuses: "ბონუსები",
+                about: "ჩვენ შესახებ",
+                language: "ქართული",
+                georgian: "ქართული",
+                english: "English",
+                russian: "Русский",
+                turkish: "Türkçe",
+                arabic: "العربية",
+                featured: "🏆 ტოპ 3 რჩეული კაზინო",
+                fullList: "20 ონლაინ კაზინოს სრული სია",
+                description: "დაათვალიერეთ ჩვენი ონლაინ კაზინოების ყრილობითი ბაზა დეტალური მიმოხილვებით, რეიტინგებით, ბონუსებით.",
+                allCasinos: "ყველა კაზინო",
+                recommended: "რეკომენდებული",
+                new: "ახალი",
+                popular: "პოპულარული",
+                highRated: "მაღალი რეიტინგი",
+                casino: "კაზინო",
+                dailyVisits: "დღიური ვიზიტები",
+                rating: "რეიტინგი",
+                play: "თამაში",
+                totalCasinos: "სულ კაზინო",
+                userReviews: "მომხმარებლის მიმოხილვა",
+                userRatings: "მომხმარებლის რეიტინგი",
+                monitoring: "მონიტორინგი",
+                footerDescription: "თქვენი სანდო წყარო ონლაინ კაზინოების მიმოხილვებისთვის, ბონუსებისთვის და თამაშის გიდებისთვის.",
+                quickLinks: "სწრაფი ბმულები",
+                contact: "კონტაქტი",
+                rightsReserved: "ყველა უფლება დაცულია.",
+                playNow: "ითამაშე ახლა",
+                popularity: "პოპულარობა",
+                bonus: "ბონუსი"
+            },
+            ru: {
+                home: "Главная",
+                casinos: "Казино",
+                reviews: "Обзоры",
+                bonuses: "Бонусы",
+                about: "О нас",
+                language: "Русский",
+                georgian: "Грузинский",
+                english: "Английский",
+                russian: "Русский",
+                turkish: "Турецкий",
+                arabic: "Арабский",
+                featured: "🏆 Топ 3 Избранных Казино",
+                fullList: "Полный список из 20 онлайн-казино",
+                description: "Просмотрите нашу полную базу данных онлайн-казино с подробными обзорами, рейтингами и бонусами.",
+                allCasinos: "Все казино",
+                recommended: "Рекомендуемые",
+                new: "Новые",
+                popular: "Популярные",
+                highRated: "Высокий рейтинг",
+                casino: "Казино",
+                dailyVisits: "Посещений в день",
+                rating: "Рейтинг",
+                play: "Играть",
+                totalCasinos: "Всего казино",
+                userReviews: "Отзывы пользователей",
+                userRatings: "Оценки пользователей",
+                monitoring: "Мониторинг",
+                footerDescription: "Ваш надежный источник обзоров онлайн-казино, бонусов и руководств по играм.",
+                quickLinks: "Быстрые ссылки",
+                contact: "Контакт",
+                rightsReserved: "Все права защищены.",
+                playNow: "Играть сейчас",
+                popularity: "Популярность",
+                bonus: "Бонус"
+            },
+            tr: {
+                home: "Ana Sayfa",
+                casinos: "Kumarhaneler",
+                reviews: "İncelemeler",
+                bonuses: "Bonuslar",
+                about: "Hakkımızda",
+                language: "Türkçe",
+                georgian: "Gürcüce",
+                english: "İngilizce",
+                russian: "Rusça",
+                turkish: "Türkçe",
+                arabic: "Arapça",
+                featured: "🏆 En İyi 3 Kumarhane",
+                fullList: "20 Çevrimiçi Kumarhanenin Tam Listesi",
+                description: "Detaylı incelemeler, derecelendirmeler ve bonuslar içeren kapsamlı çevrimiçi kumarhane veritabanımıza göz atın.",
+                allCasinos: "Tüm Kumarhaneler",
+                recommended: "Önerilen",
+                new: "Yeni",
+                popular: "Popüler",
+                highRated: "Yüksek Puanlı",
+                casino: "Kumarhane",
+                dailyVisits: "Günlük Ziyaretler",
+                rating: "Derecelendirme",
+                play: "Oyna",
+                totalCasinos: "Toplam Kumarhane",
+                userReviews: "Kullanıcı Yorumları",
+                userRatings: "Kullanıcı Derecelendirmeleri",
+                monitoring: "İzleme",
+                footerDescription: "Çevrimiçi kumarhane incelemeleri, bonuslar ve oyun rehberleri için güvenilir kaynağınız.",
+                quickLinks: "Hızlı Bağlantılar",
+                contact: "İletişim",
+                rightsReserved: "Tüm hakları saklıdır.",
+                playNow: "Hemen Oyna",
+                popularity: "Popülerlik",
+                bonus: "Bonus"
+            },
+            ar: {
+                home: "الصفحة الرئيسية",
+                casinos: "الكازينوهات",
+                reviews: "المراجعات",
+                bonuses: "المكافآت",
+                about: "من نحن",
+                language: "العربية",
+                georgian: "الجورجية",
+                english: "الإنجليزية",
+                russian: "الروسية",
+                turkish: "التركية",
+                arabic: "العربية",
+                featured: "🏆 أفضل 3 كازينوهات مميزة",
+                fullList: "قائمة كاملة بـ 20 كازينو عبر الإنترنت",
+                description: "تصفح قاعدة البيانات الشاملة للكازينوهات عبر الإنترنت مع مراجعات مفصلة وتقييمات ومكافآت.",
+                allCasinos: "جميع الكازينوهات",
+                recommended: "موصى به",
+                new: "جديد",
+                popular: "شائع",
+                highRated: "ذو تقييم عال",
+                casino: "كازينو",
+                dailyVisits: "الزيارات اليومية",
+                rating: "التقييم",
+                play: "لعب",
+                totalCasinos: "إجمالي الكازينوهات",
+                userReviews: "مراجعات المستخدمين",
+                userRatings: "تقييمات المستخدمين",
+                monitoring: "المراقبة",
+                footerDescription: "مصدرك الموثوق لمراجعات الكازينوهات عبر الإنترنت والمكافآت وأدلة الألعاب.",
+                quickLinks: "روابط سريعة",
+                contact: "اتصال",
+                rightsReserved: "جميع الحقوق محفوظة.",
+                playNow: "العب الآن",
+                popularity: "الشعبية",
+                bonus: "مكافأة"
+            }
+        };
+
+        // Casino data
+        const casinosData = [
+            {
+                id: 1,
+                name: "Casino Royal",
+                logo: "🎰",
+                visits: 12500,
+                rating: 4.9,
+                isRecommended: true,
+                isNew: false,
+                bonus: "100% up to 500₾ + 100 FS",
+                features: ["Live Casino", "Slots", "Sports Betting"],
+                popularity: 95,
+                website: "https://www.casinoroyal.com"
+            },
+            {
+                id: 2,
+                name: "Lucky Spin",
+                logo: "🍀",
+                visits: 9800,
+                rating: 4.7,
+                isRecommended: true,
+                isNew: true,
+                bonus: "200% up to 1000₾",
+                features: ["Slots", "Poker", "Live Games"],
+                popularity: 88,
+                website: "https://www.luckyspin.com"
+            },
+            {
+                id: 3,
+                name: "Golden Palace",
+                logo: "🏰",
+                visits: 15200,
+                rating: 4.8,
+                isRecommended: true,
+                isNew: false,
+                bonus: "150% up to 800₾ + 50 FS",
+                features: ["Live Casino", "Roulette", "Blackjack"],
+                popularity: 92,
+                website: "https://www.goldenpalace.com"
+            },
+            {
+                id: 4,
+                name: "Diamond Club",
+                logo: "💎",
+                visits: 7600,
+                rating: 4.5,
+                isRecommended: false,
+                isNew: true,
+                bonus: "120% up to 600₾",
+                features: ["Slots", "Baccarat", "Live Games"],
+                popularity: 82,
+                website: "https://www.diamondclub.com"
+            },
+            {
+                id: 5,
+                name: "Elite Casino",
+                logo: "⭐",
+                visits: 11300,
+                rating: 4.6,
+                isRecommended: true,
+                isNew: false,
+                bonus: "180% up to 900₾ + 75 FS",
+                features: ["Sports Betting", "Slots", "Poker"],
+                popularity: 90,
+                website: "https://www.elitecasino.com"
+            },
+            {
+                id: 6,
+                name: "Mega Fortune",
+                logo: "💰",
+                visits: 8900,
+                rating: 4.4,
+                isRecommended: false,
+                isNew: true,
+                bonus: "110% up to 700₾ + 30 FS",
+                features: ["Progressive Jackpots", "Slots", "Table Games"],
+                popularity: 78,
+                website: "https://www.megafortune.com"
+            },
+            {
+                id: 7,
+                name: "Vegas Dreams",
+                logo: "🌴",
+                visits: 10200,
+                rating: 4.6,
+                isRecommended: true,
+                isNew: false,
+                bonus: "130% up to 750₾",
+                features: ["Slots", "Live Dealer", "Video Poker"],
+                popularity: 85,
+                website: "https://www.vegasdreams.com"
+            },
+            {
+                id: 8,
+                name: "Jackpot City",
+                logo: "🏙️",
+                visits: 14500,
+                rating: 4.8,
+                isRecommended: true,
+                isNew: false,
+                bonus: "160% up to 850₾ + 60 FS",
+                features: ["Jackpot Games", "Live Casino", "Mobile App"],
+                popularity: 91,
+                website: "https://www.jackpotcity.com"
+            },
+            {
+                id: 9,
+                name: "Spin Palace",
+                logo: "🎡",
+                visits: 7800,
+                rating: 4.3,
+                isRecommended: false,
+                isNew: true,
+                bonus: "100% up to 550₾",
+                features: ["Slots", "Roulette", "Blackjack"],
+                popularity: 76,
+                website: "https://www.spinpalace.com"
+            },
+            {
+                id: 10,
+                name: "Ruby Fortune",
+                logo: "🔴",
+                visits: 9500,
+                rating: 4.5,
+                isRecommended: true,
+                isNew: false,
+                bonus: "125% up to 650₾ + 40 FS",
+                features: ["Live Games", "Slots", "VIP Program"],
+                popularity: 83,
+                website: "https://www.rubyfortune.com"
+            },
+            {
+                id: 11,
+                name: "Platinum Play",
+                logo: "⚪",
+                visits: 8200,
+                rating: 4.4,
+                isRecommended: false,
+                isNew: false,
+                bonus: "115% up to 600₾",
+                features: ["Table Games", "Slots", "Tournaments"],
+                popularity: 79,
+                website: "https://www.platinumplay.com"
+            },
+            {
+                id: 12,
+                name: "Lucky Nugget",
+                logo: "🥠",
+                visits: 11200,
+                rating: 4.7,
+                isRecommended: true,
+                isNew: false,
+                bonus: "140% up to 800₾ + 50 FS",
+                features: ["Live Casino", "Progressive", "Mobile"],
+                popularity: 87,
+                website: "https://www.luckynugget.com"
+            },
+            {
+                id: 13,
+                name: "Captain Jack",
+                logo: "🏴‍☠️",
+                visits: 6800,
+                rating: 4.2,
+                isRecommended: false,
+                isNew: true,
+                bonus: "105% up to 500₾",
+                features: ["Adventure Games", "Slots", "Bonus Rounds"],
+                popularity: 72,
+                website: "https://www.captainjack.com"
+            },
+            {
+                id: 14,
+                name: "Grand Mondial",
+                logo: "🌎",
+                visits: 12300,
+                rating: 4.6,
+                isRecommended: true,
+                isNew: false,
+                bonus: "150% up to 900₾ + 70 FS",
+                features: ["International", "Multi-currency", "Live Games"],
+                popularity: 89,
+                website: "https://www.grandmondial.com"
+            },
+            {
+                id: 15,
+                name: "Gaming Club",
+                logo: "🎮",
+                visits: 8700,
+                rating: 4.4,
+                isRecommended: false,
+                isNew: false,
+                bonus: "120% up to 620₾",
+                features: ["Classic Games", "Slots", "Loyalty Program"],
+                popularity: 80,
+                website: "https://www.gamingclub.com"
+            },
+            {
+                id: 16,
+                name: "River Belle",
+                logo: "🌊",
+                visits: 10500,
+                rating: 4.5,
+                isRecommended: true,
+                isNew: false,
+                bonus: "135% up to 720₾ + 45 FS",
+                features: ["Southern Theme", "Live Dealer", "Mobile"],
+                popularity: 84,
+                website: "https://www.riverbelle.com"
+            },
+            {
+                id: 17,
+                name: "Spin Casino",
+                logo: "🎲",
+                visits: 13200,
+                rating: 4.7,
+                isRecommended: true,
+                isNew: false,
+                bonus: "155% up to 950₾ + 65 FS",
+                features: ["Premium Games", "Live Casino", "VIP Service"],
+                popularity: 90,
+                website: "https://www.spincasino.com"
+            },
+            {
+                id: 18,
+                name: "Royal Vegas",
+                logo: "👑",
+                visits: 15700,
+                rating: 4.9,
+                isRecommended: true,
+                isNew: false,
+                bonus: "170% up to 1000₾ + 80 FS",
+                features: ["Luxury Experience", "Exclusive Games", "High Roller"],
+                popularity: 94,
+                website: "https://www.royalvegas.com"
+            },
+            {
+                id: 19,
+                name: "Euro Palace",
+                logo: "🏛️",
+                visits: 9200,
+                rating: 4.5,
+                isRecommended: false,
+                isNew: true,
+                bonus: "130% up to 680₾",
+                features: ["European Style", "Table Games", "Live Casino"],
+                popularity: 82,
+                website: "https://www.europalace.com"
+            },
+            {
+                id: 20,
+                name: "Lucky Emperor",
+                logo: "👲",
+                visits: 10800,
+                rating: 4.6,
+                isRecommended: true,
+                isNew: false,
+                bonus: "145% up to 780₾ + 55 FS",
+                features: ["Asian Theme", "Live Games", "Cultural Games"],
+                popularity: 86,
+                website: "https://www.luckyemperor.com"
+            }
+        ];
+
+        // Current language
+        let currentLanguage = 'en';
+
+        // Function to generate star rating HTML
+        function generateStarRating(rating) {
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            let starsHtml = '';
+            
+            for (let i = 0; i < 5; i++) {
+                if (i < fullStars) {
+                    starsHtml += '<i class="ri-star-fill"></i>';
+                } else if (i === fullStars && hasHalfStar) {
+                    starsHtml += '<i class="ri-star-half-line"></i>';
+                } else {
+                    starsHtml += '<i class="ri-star-line"></i>';
+                }
+            }
+            
+            return `<div class="star-rating flex justify-center">${starsHtml}</div><div class="text-center text-sm text-gray-600 mt-1">${rating}/5</div>`;
+        }
+
+        // Function to generate progress bar HTML
+        function generateProgressBar(value) {
+            return `
+                <div class="progress-bar w-full">
+                    <div class="progress-value" style="width: ${value}%"></div>
+                </div>
+                <div class="text-right text-xs text-gray-500 mt-1">${value}%</div>
+            `;
+        }
+
+        // Function to populate featured casinos
+        function populateFeaturedCasinos() {
+            const featuredContainer = document.getElementById('featuredCasinos');
+            const topCasinos = casinosData
+                .sort((a, b) => b.rating - a.rating)
+                .slice(0, 3);
+            
+            featuredContainer.innerHTML = topCasinos.map(casino => `
+                <div class="casino-card bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="text-4xl">${casino.logo}</div>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Top ${casinosData.indexOf(casino) + 1}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">${casino.name}</h3>
+                        <div class="mb-4">
+                            ${generateStarRating(casino.rating)}
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm text-gray-600 mb-1" data-translate="popularity">Popularity</div>
+                            ${generateProgressBar(casino.popularity)}
+                        </div>
+                        <div class="mb-4">
+                            <div class="text-sm font-semibold text-purple-600" data-translate="bonus">Bonus: ${casino.bonus}</div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors cursor-pointer play-now-btn" data-website="${casino.website}">
+                            <span data-translate="playNow">Play Now</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            // Add event listeners to play buttons
+            document.querySelectorAll('.play-now-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const website = button.getAttribute('data-website');
+                    window.open(website, '_blank');
+                });
+            });
+        }
+
+        // Function to populate casinos table
+        function populateCasinosTable() {
+            const tableBody = document.getElementById('casinosTable');
+            
+            tableBody.innerHTML = casinosData.map((casino, index) => `
+                <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                    <td class="text-center py-4 px-4 font-medium text-gray-900">${index + 1}</td>
+                    <td class="py-4 px-4">
+                        <div class="text-3xl">${casino.logo}</div>
+                    </td>
+                    <td class="py-4 px-4">
+                        <div class="font-semibold text-gray-900">${casino.name}</div>
+                        <div class="text-sm text-gray-600">${casino.features.join(', ')}</div>
+                    </td>
+                    <td class="text-right py-4 px-4 font-medium text-gray-900">${casino.visits.toLocaleString()}</td>
+                    <td class="py-4 px-4">
+                        ${generateStarRating(casino.rating)}
+                    </td>
+                    <td class="text-center py-4 px-4">
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors cursor-pointer play-now-btn" data-website="${casino.website}">
+                            <span data-translate="play">Play</span>
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+
+            // Add event listeners to play buttons
+            document.querySelectorAll('.play-now-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const website = button.getAttribute('data-website');
+                    window.open(website, '_blank');
+                });
+            });
+        }
+
+        // Function to handle filter buttons
+        function setupFilterButtons() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Get filter type
+                    const filterType = button.getAttribute('data-filter');
+                    
+                    // Filter casinos based on type
+                    let filteredCasinos = [...casinosData];
+                    
+                    if (filterType === 'recommended') {
+                        filteredCasinos = casinosData.filter(casino => casino.isRecommended);
+                    } else if (filterType === 'newest') {
+                        filteredCasinos = casinosData.filter(casino => casino.isNew);
+                    } else if (filterType === 'popular') {
+                        filteredCasinos = casinosData.sort((a, b) => b.popularity - a.popularity);
+                    } else if (filterType === 'rated') {
+                        filteredCasinos = casinosData.sort((a, b) => b.rating - a.rating);
+                    }
+                    
+                    // Update table with filtered casinos
+                    updateTableWithFilteredCasinos(filteredCasinos);
+                });
+            });
+        }
+
+        // Function to update table with filtered casinos
+        function updateTableWithFilteredCasinos(filteredCasinos) {
+            const tableBody = document.getElementById('casinosTable');
+            
+            tableBody.innerHTML = filteredCasinos.map((casino, index) => `
+                <tr class="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+                    <td class="text-center py-4 px-4 font-medium text-gray-900">${index + 1}</td>
+                    <td class="py-4 px-4">
+                        <div class="text-3xl">${casino.logo}</div>
+                    </td>
+                    <td class="py-4 px-4">
+                        <div class="font-semibold text-gray-900">${casino.name}</div>
+                        <div class="text-sm text-gray-600">${casino.features.join(', ')}</div>
+                    </td>
+                    <td class="text-right py-4 px-4 font-medium text-gray-900">${casino.visits.toLocaleString()}</td>
+                    <td class="py-4 px-4">
+                        ${generateStarRating(casino.rating)}
+                    </td>
+                    <td class="text-center py-4 px-4">
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg transition-colors cursor-pointer play-now-btn" data-website="${casino.website}">
+                            <span data-translate="play">Play</span>
+                        </button>
+                    </td>
+                </tr>
+            `).join('');
+
+            // Add event listeners to play buttons
+            document.querySelectorAll('.play-now-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const website = button.getAttribute('data-website');
+                    window.open(website, '_blank');
+                });
+            });
+        }
+
+        // Function to setup language selector
+        function setupLanguageSelector() {
+            const languageBtn = document.getElementById('languageBtn');
+            const languageDropdown = document.getElementById('languageDropdown');
+            const languageOptions = document.querySelectorAll('.language-option');
+            
+            languageBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                languageDropdown.classList.toggle('show');
+            });
+            
+            languageOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    const lang = option.getAttribute('data-lang');
+                    changeLanguage(lang);
+                    languageDropdown.classList.remove('show');
+                });
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
+                    languageDropdown.classList.remove('show');
+                }
+            });
+        }
+
+        // Function to change language
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Update all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update language button
+            const languageBtn = document.getElementById('languageBtn');
+            const flagSpan = languageBtn.querySelector('span:first-child');
+            const textSpan = languageBtn.querySelector('span:last-child');
+            
+            if (lang === 'en') {
+                flagSpan.textContent = '🇺🇸';
+                textSpan.textContent = translations[lang]['language'];
+            } else if (lang === 'ka') {
+                flagSpan.textContent = '🇬🇪';
+                textSpan.textContent = translations[lang]['language'];
+            } else if (lang === 'ru') {
+                flagSpan.textContent = '🇷🇺';
+                textSpan.textContent = translations[lang]['language'];
+            } else if (lang === 'tr') {
+                flagSpan.textContent = '🇹🇷';
+                textSpan.textContent = translations[lang]['language'];
+            } else if (lang === 'ar') {
+                flagSpan.textContent = '🇸🇦';
+                textSpan.textContent = translations[lang]['language'];
+                document.body.classList.add('rtl');
+            } else {
+                document.body.classList.remove('rtl');
+            }
+            
+            // Repopulate content with new language
+            populateFeaturedCasinos();
+            populateCasinosTable();
+        }
+
+        // Function to setup search functionality
+        function setupSearch() {
+            const searchInput = document.getElementById('searchInput');
+            
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                if (searchTerm.length < 2) {
+                    populateCasinosTable();
+                    return;
+                }
+                
+                const filteredCasinos = casinosData.filter(casino => 
+                    casino.name.toLowerCase().includes(searchTerm) ||
+                    casino.features.some(feature => feature.toLowerCase().includes(searchTerm))
+                );
+                
+                updateTableWithFilteredCasinos(filteredCasinos);
+            });
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            populateFeaturedCasinos();
+            populateCasinosTable();
+            setupFilterButtons();
+            setupLanguageSelector();
+            setupSearch();
+        });
+    </script>
+</body>
+
+<!-- Mirrored from xscore.site/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Oct 2025 16:46:08 GMT -->
+</html>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L6XRXGENH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8L6XRXGENH');
+</script>
